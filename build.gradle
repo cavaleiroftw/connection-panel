@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'work.cavaleiro.java'
+version '1.0-SNAPSHOT'
+
+compileJava.options.encoding('UTF-8')
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    def lombok = 'org.projectlombok:lombok:1.18.24'
+    compileOnly(lombok)
+    annotationProcessor(lombok)
+
+    def page = 'C:/API/'
+    compileOnly(files(page + 'PaperSpigot.jar'))
+}

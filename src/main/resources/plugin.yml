@@ -1,0 +1,6 @@
+main: work.cavaleiro.java.Client
+name: Ping
+version: 1.0.0
+author: Cavaleiro
+commands:
+  ping:
